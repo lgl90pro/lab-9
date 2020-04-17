@@ -351,5 +351,15 @@ def heapSort(arr): # пірамідальне сортування: шукаєм
     print(f'Затрачений час: {stop - start}.')
     print('____________________________________________________________________________________________________')
 
-main_function()
-
+while True:
+    main_function()
+    while True:
+        question = input('Бажаєте повторити задачу?\n+/-: ')
+        if (question == '+'):
+            print()
+            break
+        elif (question == "-"):
+            exit(0)
+        else:
+            print('Введіть лише + або -\n')
+            continue
